@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biest</title>
+    <link rel="stylesheet" href="_styling/mainStyle.css">
+    <script src="_js/main.js"></script>
+    <link rel="icon" href="_imgs/logoImperium.jpg">
+
+</head>
+
+<body onload="active()">
+    <header>
+        <nav>
+            <figure id="logo" onclick="clickableLogo()"><img src="_imgs/logoImperium.jpg" alt="Logo toneelgroep Imperium" title="Home"></figure>
+            <ul id="navUl">
+                <li id="navLi">
+                    <a href="agenda.html" id="nav1">agenda</a>
+                </li>
+
+                <li id="navLi">
+                    <a href="fotoboek.html" id="nav3">fotoboek</a>
+                </li>
+                <li id="navLi">
+                    <a href="over.html" id="nav4">over</a>
+                </li>
+                <li id="navLi">
+                    <a href="contact.html" id="nav5">contact</a>
+                </li>
+                <a href="https://www.facebook.com/ToneelgroepImperium/" id="socialRed">
+                    <img src="_imgs/socialMedia/facebookRed.png" alt="onze facebook-pagina">
+                </a>
+                <a href="https://twitter.com/imperiumtheater" id="socialRed">
+                    <img src="_imgs/socialMedia/twitterRed.png" alt="onze twitter-pagina">
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="breadcrumbs">
+        <a href="index.html">home > </a>
+        <a href="agenda.html">agenda > </a>
+        <span>Biest</span>
+    </div>
+    <main>
+        <section id="main" style="height: 1000px">
+            <h1>Biest</h1>
+            <p>Een oude boerin en haar dochter houden samen een boerderij draaiend, maar kunnen elkaar niet meer bereiken. Moeder weet dat haar einde nadert en ze biecht haar laatste levensgeheimen op. Het moet gezegd en de sfeer is hard. De boerderij is zo goed als failliet; de dochter knoopt de eindjes aan elkaar.
+                <br/>
+                <br/> <em>Biest: een muzikale tragedie over grote levensmomenten als geboorte en dood.</em> </p>
+            <figure><img src="./_imgs/slider/Biest1-Persfoto-034-1024x682.jpg" alt="Foto biest" id="biest"></figure>
+            <span id="geld">€10,-</span>
+            <a href="reserveren.html" id="ticketsKnop">tickets</a>
+            <hr id="voorstellingHr" />
+            <p id="voorstellingData">
+
+                <span class="bold">Regie:</span> Tilde van Haaster
+                <br/><span class="bold">Tekst:</span> Herman van de Wijdeven
+                <br/><span class="bold">Compositie:</span> Wiebe Gotink
+                <br/><span class="bold">Speeldata:</span> 7, 8, 14, 15, 16*, 20, 21 en 22 februari 2014
+                <br/><span class="bold">Spelers:</span> Mieke de Jonge en Lidewij Gerits
+                <br/><span class="bold">Zang:</span> René Huinen
+                <br/><span class="bold">Foto:</span> Geriena.zoom.nl
+                <br/><span class="bold">Aanvang:</span> 20:30 / Matinee* 14:30
+                <br/><span class="bold">Entree:</span> regulier: EUR 12, studenten: EUR 10
+            </p>
+            <section id="facebookComments">
+                <section>
+                    <figure>
+                        <img src="./_imgs/Facebook/sil-female.png" alt="Foto berichtgever">
+                    </figure>
+                    <span class="naam">Jorinda Groeneveld</span>
+                    <span class="tijd">Vandaag om 13:35</span>
+                    <p>Het was een ontroerend theaterstuk, gewetensvol en doorleefd gespeeld! Enorm genoten!</p>
+                    <div>
+                        <span>Leuk</span>
+                        <span>Reageren</span>
+                    </div>
+                </section>
+                <section>
+                    <figure>
+                        <img src="./_imgs/Facebook/sil-female.png" alt="Foto berichtgever">
+                    </figure>
+                    <span class="naam">Vera Jongenotter</span>
+                    <span class="tijd" id="tijdboi">Gisteren om 8:15</span>
+                    <p>Onwijs leuke avond gehad met een leuke voorstelling. Zeker aan te raden!</p>
+                    <div>
+                        <span>Leuk</span>
+                        <span>Reageren</span>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+
+    </main>
+    <footer>
+        <section id="contact" class=".col-2">
+            <h4>Theater Imperium</h4>
+            <p>Oude Vest 33e
+                <br/> 2312 XR Leiden
+                <br/>071 5141035</p>
+        </section>
+        <section id="volgOns">
+            <h4>Volg ons</h4>
+            <div class="wrapper">
+                <a href="https://www.facebook.com/ToneelgroepImperium/">
+                    <figure id="facebook" class="socialRed2"><img src="_imgs/socialMedia/facebookRed.png" alt="onze facebook-pagina"></figure>
+                </a>
+                <a href="https://twitter.com/imperiumtheater">
+                    <figure id="twitter" class="socialRed2"><img src="_imgs/socialMedia/twitterRed.png" alt="onze twitter-pagina"></figure>
+                </a>
+            </div>
+        </section>
+        <section id="nieuwsbrief">
+            <p>Schrijf je in voor de <b>nieuwsbrief</b> en blijf op de hoogte van het laatste nieuws!</p>
+            <form action="index.html" method="post" class="subscribe-form">
+                <input type="email" name="email" class="subscribe-input" placeholder="email adres">
+                <button type="submit" class="subscribe-submit"></button>
+                <img src="_imgs/icons/arrow.png" alt="">
+            </form>
+
+        </section>
+
+
+    </footer>
+
+
+
+</body>
+
+
+
+
+</html>

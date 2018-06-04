@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda pagina 2</title>
+    <link rel="stylesheet" href="_styling/mainStyle.css">
+    <link rel="stylesheet" href="_styling/agenda.css">
+    <script src="_js/main.js"></script>
+<link rel="icon" href="_imgs/logoImperium.jpg">
+
+</head>
+
+<body onload="active()">
+    <header>
+        <nav>
+            <figure id="logo" onclick="clickableLogo()"><img src="_imgs/logoImperium.jpg" alt="Logo toneelgroep Imperium" title="Home"></figure>
+            <ul id="navUl">
+                <li id="navLi">
+                    <a href="agenda.html" id="nav1">agenda</a>
+                </li>
+
+                <li id="navLi">
+                    <a href="fotoboek.html" id="nav3">fotoboek</a>
+                </li>
+                <li id="navLi">
+                    <a href="over.html" id="nav4">over</a>
+                </li>
+                <li id="navLi">
+                    <a href="contact.html" id="nav5">contact</a>
+                </li>
+                <a href="https://www.facebook.com/ToneelgroepImperium/" id="socialRed">
+                    <img src="_imgs/socialMedia/facebookRed.png" alt="onze facebook-pagina">
+                </a>
+                <a href="https://twitter.com/imperiumtheater" id="socialRed">
+                    <img src="_imgs/socialMedia/twitterRed.png" alt="onze twitter-pagina">
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="breadcrumbs">
+        <a href="index.html">home > </a>
+        <span>agenda pagina 2</span>
+    </div>
+    <main>
+        <section id="main">
+            <h1>Komende voorstellingen</h1>
+            <section id="voorstelling">
+                <div class="rectangle">
+                    <h2>12 mrt</h2>
+                </div>
+                <h3>Mama’s aan de Poort ‘ZUCHT’</h3>
+                <h4>van Ingrid Mank en Vivian Wesselingh</h4>
+                <span>€10,-</span>
+                <a href="biest.html">info</a>
+                <a href="reserveren.html" id="tickets">tickets</a>
+            </section>
+            <section id="voorstelling">
+                <div class="rectangle">
+                    <h2>15 mrt</h2>
+                </div>
+                <h3>Mama’s aan de Poort ‘ZUCHT’</h3>
+                <h4>van Ingrid Mank en Vivian Wesselingh</h4>
+                <span>€10,-</span>
+                <a href="biest.html">info</a>
+                <a href="reserveren.html" id="tickets">tickets</a>
+            </section>
+            <section id="voorstelling">
+                <div class="rectangle" id="biest">
+                    <h2>22 mrt</h2>
+                </div>
+                <h3>Biest</h3>
+                <h4>van Tilde van Haaster</h4>
+                <span>€12,-</span>
+                <a href="biest.html">info</a>
+                <a href="reserveren.html" id="tickets">tickets</a>
+            </section>
+            <section id="voorstelling">
+                <div class="rectangle" id="biest">
+                    <h2>25 mrt</h2>
+                </div>
+                <h3>Biest</h3>
+                <h4>van Tilde van Haaster</h4>
+                <span>€12,-</span>
+                <a href="biest.html">info</a>
+                <a href="reserveren.html" id="tickets">tickets</a>
+            </section>
+            <section id="voorstelling">
+                <div class="rectangle">
+                    <h2>7 apr</h2>
+                </div>
+                <h3>Mama’s aan de Poort ‘ZUCHT’</h3>
+                <h4>van Ingrid Mank en Vivian Wesselingh</h4>
+                <span>€10,-</span>
+                <a href="biest.html">info</a>
+                <a href="reserveren.html" id="tickets">tickets</a>
+            </section>
+            <aside id="kalenderGenres">
+                <h3>Kalender</h3>
+                <select name="maand" onchange="kalender()" id="selector">
+                    <option value="alles">Alles vanaf nu</option>
+                    <option value="Januari">Januari</option>
+                    <option value="Februari">Februari</option>
+                    <option value="Maart">Maart</option>
+                    <option value="April">April</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Juni">Juni</option>
+                    <option value="Juli">Juli</option>
+                    <option value="Augustus">Augustus</option>
+                    <option value="September">September</option>
+                    <option value="Oktober">Oktober</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <h4 id="kalenderMaand">Maart 2017</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>ma</th>
+                            <th>di</th>
+                            <th>wo</th>
+                            <th>do</th>
+                            <th>vr</th>
+                            <th>za</th>
+                            <th>zo</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td id="greyed">1</td>
+                            <td id="greyed">2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td id="greyed">11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td id="greyed">19</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td id="greyed">26</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Genres</h3>
+                <a id="selectedGenre" href="agenda.html">Alle genres</a>
+                <a href="agenda.html">Cabaret </a>
+                <a href="agenda.html">Circustheater</a>
+                <a href="agenda.html">Cirque</a>
+                <a href="agenda.html">Dans</a>
+                <a href="agenda.html">Diner-voorstelling</a>
+                <a href="agenda.html">Film</a>
+                <a href="agenda.html">Jeugd & familie</a>
+                <a href="agenda.html">(Licht) klassiek</a>
+                <a href="agenda.html">Musical</a>
+                <a href="agenda.html">Muziektheater</a>
+                <a href="agenda.html">Opera</a>
+                <a href="agenda.html">Show & variété</a>
+                <a href="agenda.html">Theatercollege</a>
+                <a href="agenda.html">Theaterconcert</a>
+                <a href="agenda.html">Toneel</a>
+                <a href="agenda.html">Diner</a>
+                <a href=""></a>
+            </aside>
+            <section id="nav">
+                <a href="agenda.html">1</a>
+                <a href="agenda2.html" id="agendaBoi">2</a>
+                <a href="agenda2.html">3</a>
+                <a>...</a>
+                <a href="agenda2.html">5</a>
+                <a href="agenda2.html">volgende</a>
+            </section>
+        </section>
+
+
+    </main>
+    <footer>
+        <section id="contact" class=".col-2">
+            <h4>Theater Imperium</h4>
+            <p>Oude Vest 33e
+                <br/> 2312 XR Leiden
+                <br/>071 5141035</p>
+        </section>
+        <section id="volgOns">
+            <h4>Volg ons</h4>
+            <div class="wrapper">
+                <a href="https://www.facebook.com/ToneelgroepImperium/">
+                    <figure id="facebook" class="socialRed2"><img src="_imgs/socialMedia/facebookRed.png" alt="onze facebook-pagina"></figure>
+                </a>
+                <a href="https://twitter.com/imperiumtheater">
+                    <figure id="twitter" class="socialRed2"><img src="_imgs/socialMedia/twitterRed.png" alt="onze twitter-pagina"></figure>
+                </a>
+            </div>
+        </section>
+        <section id="nieuwsbrief">
+            <p>Schrijf je in voor de <b>nieuwsbrief</b> en blijf op de hoogte van het laatste nieuws!</p>
+            <form action="index.html" method="post" class="subscribe-form">
+                <input type="email" name="email" class="subscribe-input" placeholder="email adres">
+                <button type="submit" class="subscribe-submit"></button>
+                <img src="_imgs/icons/arrow.png" alt="">
+            </form>
+
+        </section>
+
+
+    </footer>
+
+
+
+</body>
+
+
+
+
+</html>

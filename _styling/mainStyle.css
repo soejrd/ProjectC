@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+* {
+    transition: all 150ms ease-in-out;
+    animation: all 150ms ease-in-out;
+    box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    from {
+        transform: translate(0, -10px);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+
+/* grid layout d.m.v. kolommen 1/12 */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+
+
+/* Vanaf hier is de header-sectie */
+
+header {
+    width: 100%;
+}
+
+nav {
+    background-color: #ffffff;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+nav > figure {
+    margin: 0;
+}
+
+nav > figure:nth-child(1) {
+    position: relative;
+    height: 70px;
+    width: 50px;
+    top: 15px;
+    left: 50px;
+    cursor: pointer;
+}
+
+nav > figure > img {
+    margin: 0;
+    height: 100%;
+}
+
+ul#navUl {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 16.66%;
+    margin-top: -37px;
+}
+
+li#navLi {
+    display: inline;
+    height: 100%;
+    position: relative;
+}
+
+li#navLi > a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    color: black;
+    font-weight: normal;
+    font-size: 1.1em;
+    height: 100%;
+    padding-bottom: 35px;
+    padding-top: 40px;    
+}
+
+#navLi:nth-child(2) {
+    left: 8.33%;
+}
+
+#navLi:nth-child(3) {
+    left: 16.66%;
+}
+
+#navLi:nth-child(4) {
+    left: 25%;
+}
+
+#navLi:nth-child(5) {
+    left: 370px;
+}
+
+li#navLi > a:hover {
+    color: #cd1946;
+}
+
+li#navLi > a:active {
+    color: yellow;
+}
+
+#navUl > a {
+    display: inline;
+    text-decoration: none;
+}
+
+#socialRed:nth-child(5) {
+    display: inline;
+    margin-left: 800px;
+}
+
+#socialRed > img {
+    position: relative;
+    padding: 0;
+    width: 25px;
+    height: auto;
+    opacity: 1;
+    cursor: pointer;
+    filter: grayscale();
+    animation: fadeIn 2s;
+}
+
+#socialRed:hover > img {
+    filter: none;
+}
+
+
+/* Vanaf hier de breadcrumbs */
+
+.breadcrumbs {
+    text-decoration: none;
+    font-family: 'Roboto light', sans-serif;
+    font-size: 1.1em;
+    margin-left: 16.66%;
+    margin-top: 20px;
+    color: #cd1946;
+}
+
+.breadcrumbs > a {
+    text-decoration: none;
+    color: #888888;
+}
+
+
+/* Vanaf hier is de main-sectie */
+
+section#main {
+    width: 66.68%;
+    margin-left: 16.66%;
+}
+
+section#main > h1 {
+    font-family: 'Roboto regular', sans-serif;
+    font-size: 3.3em;
+}
+
+section#main > h2 {
+    font-family: 'Roboto thin', sans-serif;
+    font-size: 1.5em;
+    color: grey;
+    margin-top: -50px;
+    padding-bottom: 30px;
+}
+
+section#main > p {
+    font-family: 'Raleway Regular', sans-serif;
+    font-size: 1.25em;
+    line-height: 26pt;
+    text-align: justify;
+}
+
+section#main > p:nth-child(2) {
+    width: 50%;
+}
+
+section#main > p#onze {
+    width: 66.66%;
+}
+
+section#main > figure > img {
+    float: right;
+    margin-top: -220px;
+    width: 375px;
+}
+
+section#main > figure > img#biest {
+    position: relative;
+    margin-top: -320px;
+    left: 40px;
+}
+
+section#main > hr {
+    width: 50%;
+    height: 1px;
+    border: none;
+    float: left;
+    margin-top: 30px;
+    background-color: #c4c4c4;
+}
+
+section#main > hr#voorstellingHr {
+    width: 100%;
+}
+
+section#main > p#hier {
+    width: 50%;
+    margin-top: 90px;
+}
+
+span#geld {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: black;
+    margin-left: 63%;
+    top: -25px;
+}
+
+a#ticketsKnop {
+    display: block;
+    position: relative;
+    padding: 10px 35px 10px 35px;
+    float: right;
+    margin-top: -35px;
+    width: 150px;
+    text-decoration: none;
+    font-family: 'Roboto light', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #cd1946;
+    border: 2px solid #cd1946;
+    border-radius: 50px;
+    animation: fadeIn 2000ms;
+}
+
+a#ticketsKnop:hover {
+    color: white;
+    font-weight: 800;
+    background-color: #cd1946;
+}
+
+section#main > p#voorstellingData {
+    font-size: 1em;
+    margin-top: 75px;
+}
+
+section#main > p#voorstellingData > span.bold {
+    font-weight: bold;
+}
+
+section#facebookComments > section {
+    border: 2px solid #e1e8ed;
+    margin: 0;
+    position: relative;
+    width: 41.66%;
+    float: right;
+    margin-top: -320px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+section#facebookComments > section:nth-child(2) {
+    margin-top: -120px;
+}
+
+section#facebookComments > section > figure > img {
+    width: 50px;
+    height: 50px;
+    margin-left: -22px;
+    cursor: pointer;
+}
+
+section#facebookComments > section > span.naam {
+    position: relative;
+    font-size: 1em;
+    color: #55acee;
+    top: -75px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+section#facebookComments > section > span.tijd {
+    position: relative;
+    font-size: 0.8em;
+    color: #8899a6;
+    font-family: 'Roboto light', sans-serif;
+    margin-left: -144px;
+    top: -55px;
+}
+
+#tijdboi {
+    left: 15px;
+}
+
+section#facebookComments > section > p {
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
+section#facebookComments > section > div > span {
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+    color: #55ACEE;
+    cursor: pointer;
+}
+
+section#facebookComments > section > div {
+    background-color: #ebedf1;
+    height: 40px;
+}
+
+section#main > p > em {
+    font-size: 0.8em;
+}
+
+section#main > p > a {
+    text-decoration: underline;
+    color: #cd1946;
+}
+
+aside#onze > a {
+    position: relative;
+    display: block;
+    font-family: 'Raleway Regular', sans-serif;
+    font-size: 1.25em;
+    color: #cd1946;
+    line-height: 3em;
+}
+
+aside#onze {
+    margin-top: -695px;
+    margin-right: 16.66%;
+    float: right;
+}
+
+aside#donateur {
+    float: right;
+    position: relative;
+    width: 20%;
+    margin-right: 8.33%;
+    margin-top: -670px;
+}
+
+aside#donateur > h3 {
+    font-family: 'Raleway Regular', sans-serif;
+    font-size: 1.25em;
+    color: #cd1946;
+}
+
+aside#donateur > p {
+    font-family: 'Raleway Regular', sans-serif;
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+
+/* Vanaf hier is de footer-sectie */
+
+footer {
+    margin-top: 50px;
+    position: relative;
+    height: 250px;
+    width: 100%;
+    background-color: white;
+}
+
+footer > section {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #810d30;
+    font-size: 1.2em;
+    margin: 0;
+    margin-top: 75px;
+    width: 200px;
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+footer > section#contact {
+    margin-left: 16.66%;
+}
+
+footer > section > h4 {
+    font-family: 'Raleway Bold', sans-serif;
+    margin: 0;
+}
+
+#volgOns {
+    position: absolute;
+    margin-left: 0;
+    width: 80px;
+    left: 610px;
+}
+
+#volgOns > .footerWrapper {
+    width: 35px;
+    margin-top: 20px;
+}
+
+.socialRed2 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: default;
+}
+
+.socialRed2 > img {
+    position: relative;
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    filter: grayscale();
+    top: 5px;
+}
+
+.socialRed2:hover > img {
+    filter: none;
+}
+
+#nieuwsbrief {
+    float: right;
+    margin-left: 0;
+    margin-right: 16.66%;
+    width: 33.33%;
+    height: 200px;
+}
+
+#nieuwsbrief > p {
+    margin: 0;
+}
+
+#nieuwsbrief > p > b {
+    font-family: 'Raleway Bold', sans-serif;
+}
+
+#nieuwsbrief > form {
+    height: 60px;
+}
+
+#nieuwsbrief > form > input {
+    margin: 0;
+    padding: 20px;
+    margin-top: 28px;
+    height: 50px;
+    width: 400px;
+}
+
+#nieuwsbrief > form > button {
+    position: relative;
+    margin: 0;
+    padding-right: 92px;
+    margin-left: -5px;
+    top: 20px;
+    height: 50px;
+    background-color: #cd1946;
+    border: 0;
+    cursor: pointer;
+    background-image: url(../_imgs/icons/arrow.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#nieuwsbrief > form > button:hover {
+    background-color: #b0153a;
+}
+
+#nieuwsbrief > form > img {
+    display: none;
+}
+
+
+/* stuk fotoboek */
+
+#main > table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 15px;
+    border-collapse: separate;
+    margin-top: 10px;
+    margin-left: -13px;
+}
+
+#main > table > tbody {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#main > table > tbody > tr > td {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 280px;
+    cursor: pointer;
+}
+
+#main > table > tbody > tr > td > h3 {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#main > table > tbody > tr > td:hover > h3 {
+    color: #cd1946;
+}
+
+#main > table > tbody > tr > td:hover > figure > img {
+    filter: contrast(0.25) grayscale(0.75) brightness(1.5);
+}
+
+#main > table > tbody > tr > td > figure > img {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    top: 0px;
+    height: 280px;
+    z-index: -1;
+    filter: contrast(0.5);
+}
+
+#main > table > tbody > tr > td > figure {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* forms voor de contactpagina */
+
+section#main > form {
+    margin-top: 75px;
+}
+
+section#main > form > input,
+textarea {
+    display: block;
+    width: 41.66%;
+    height: 50px;
+    margin-bottom: 65px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}
+
+section#main > form > textarea {
+    position: relative;
+    float: right;
+    display: inline;
+    background-color: white;
+    width: 50%;
+    margin-top: -345px;
+    height: 300px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+}
+
+section#main > form > input[type=submit] {
+    position: relative;
+    display: inline;
+    float: right;
+    width: 20%;
+    margin-right: -505px;
+    border: 2px solid #cd1946;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #cd1946;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+section#main > form > input[type=submit]:hover {
+    color: white;
+    background-color: #cd1946;
+}
+
+section#main > p {
+    font-family: 'Raleway Regular', sans-serif;
+    font-size: 1.25em;
+    line-height: 26pt;
+    text-align: justify;
+}
+
+section#main > aside#huren {
+    position: relative;
+    float: right;
+    display: inline;
+    margin-top: -715px;
+    margin-right: 21.33%;
+}
+
+section#main > aside > figure > img {
+    margin-bottom: 50px;
+}
+
+section.technischeMain {
+    margin: 0 auto;
+    width: 66.66%;
+}
+
+section.technischeMain > h2 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+
+section.technischeMain > h1 {
+    font-family: 'Roboto regular', sans-serif;
+    font-size: 3.3em;
+}
+
+section.technischeMain > p {
+    font-family: 'Raleway Regular', sans-serif;
+    font-size: 1.25em;
+    line-height: 26pt;
+    text-align: justify;
+}

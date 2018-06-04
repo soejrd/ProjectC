@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="_styling/mainStyle.css">
+    <script src="_js/main.js"></script>
+    <link rel="icon" href="_imgs/logoImperium.jpg">
+
+</head>
+
+<body onload="active()">
+    <header>
+        <nav>
+            <figure id="logo" onclick="clickableLogo()"><img src="_imgs/logoImperium.jpg" alt="Logo toneelgroep Imperium" title="Home"></figure>
+            <ul id="navUl">
+                <li id="navLi">
+                    <a href="agenda.html" id="nav1">agenda</a>
+                </li>
+
+                <li id="navLi">
+                    <a href="fotoboek.html" id="nav3">fotoboek</a>
+                </li>
+                <li id="navLi">
+                    <a href="over.html" id="nav4">over</a>
+                </li>
+                <li id="navLi">
+                    <a href="contact.html" id="nav5">contact</a>
+                </li>
+                <a href="https://www.facebook.com/ToneelgroepImperium/" id="socialRed">
+                    <img src="_imgs/socialMedia/facebookRed.png" alt="onze facebook-pagina">
+                </a>
+                <a href="https://twitter.com/imperiumtheater" id="socialRed">
+                    <img src="_imgs/socialMedia/twitterRed.png" alt="onze twitter-pagina">
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="breadcrumbs">
+        <a href="index.html">home > </a>
+        <span>contact</span>
+    </div>
+    <main>
+        <section id="main" style="height:1000px">
+            <h1>Contact</h1>
+            <p>Heeft u vragen of opmerkingen voor het Imperium Theater? Dan kunt u het volgende formulier invullen.
+                <br/>
+                <br/> Bent u geïnteresseerd in het huren van ons theater? Dan kunt u <a href="huren.html">hier</a> meer informatie vinden.</p>
+            <form action="" method="post" id="verzendForm">
+                <input type="text" name="naam" placeholder="naam" id="naam" onblur="validateName()">
+                <span id="naamSpan"></span>
+                <input type="email" name="mail" placeholder="emailadres" id="mail" onblur="validateMail()">
+                <span id="mailSpan"></span>
+                <input type="tel" name="tel" placeholder="telefoonnummer" id="tel" onblur="validateNumber()">
+                <span id="telSpan"></span>
+
+
+                <textarea name="bericht" form="verzendForm" placeholder="bericht"></textarea>
+                <input type="submit">
+            </form>
+        </section>
+
+
+    </main>
+    <footer>
+        <section id="contact" class=".col-2">
+            <h4>Theater Imperium</h4>
+            <p>Oude Vest 33e
+                <br/> 2312 XR Leiden
+                <br/>071 5141035</p>
+        </section>
+        <section id="volgOns">
+            <h4>Volg ons</h4>
+            <div class="wrapper">
+                <a href="https://www.facebook.com/ToneelgroepImperium/">
+                    <figure id="facebook" class="socialRed2"><img src="_imgs/socialMedia/facebookRed.png" alt="onze facebook-pagina"></figure>
+                </a>
+                <a href="https://twitter.com/imperiumtheater">
+                    <figure id="twitter" class="socialRed2"><img src="_imgs/socialMedia/twitterRed.png" alt="onze twitter-pagina"></figure>
+                </a>
+            </div>
+        </section>
+        <section id="nieuwsbrief">
+            <p>Schrijf je in voor de <b>nieuwsbrief</b> en blijf op de hoogte van het laatste nieuws!</p>
+            <form action="index.html" method="post" class="subscribe-form">
+                <input type="email" name="email" class="subscribe-input" placeholder="email adres">
+                <button type="submit" class="subscribe-submit"></button>
+                <img src="_imgs/icons/arrow.png" alt="">
+            </form>
+
+        </section>
+
+
+    </footer>
+
+
+
+</body>
+
+
+
+
+</html>

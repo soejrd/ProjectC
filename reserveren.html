@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reserveren</title>
+    <link rel="stylesheet" href="_styling/mainStyle.css">
+    <link rel="stylesheet" href="_styling/reserveren.css">
+    <script src="_js/main.js"></script>
+    <script src="_js/reserveren.js"></script>
+    <link rel="icon" href="_imgs/logoImperium.jpg">
+</head>
+
+<body onload="onloadFunction()">
+    <header>
+        <nav>
+            <figure id="logo" onclick="clickableLogo()"><img src="_imgs/logoImperium.jpg" alt="Logo toneelgroep Imperium" title="Home"></figure>
+            <ul id="navUl">
+                <li id="navLi">
+                    <a href="agenda.html" id="nav1">agenda</a>
+                </li>
+
+                <li id="navLi">
+                    <a href="fotoboek.html" id="nav3">fotoboek</a>
+                </li>
+                <li id="navLi">
+                    <a href="over.html" id="nav4">over</a>
+                </li>
+                <li id="navLi">
+                    <a href="contact.html" id="nav5">contact</a>
+                </li>
+                <a href="https://www.facebook.com/ToneelgroepImperium/" id="socialRed">
+                    <img src="_imgs/socialMedia/facebookRed.png" alt="onze facebook-pagina">
+                </a>
+                <a href="https://twitter.com/imperiumtheater" id="socialRed">
+                    <img src="_imgs/socialMedia/twitterRed.png" alt="onze twitter-pagina">
+                </a>
+            </ul>
+        </nav>
+        <div class="breadcrumbs">
+            <a href="index.html">home ></a>
+            <a href="agenda.html">agenda ></a>
+            <a href="biest.html">Biest ></a>
+            <span>reserveren</span>
+        </div>
+    </header>
+    <main>
+        <section id="main">
+            <h1>Reserveren</h1>
+            <h2>Biest</h2>
+            <p>Dinsdag 24 feb 20:30
+            </p>
+            <div class="circle" id="circle1">
+                <span>1</span>
+            </div>
+            <div class="form">
+                <span>Log in met</span>
+                <figure>
+                    <img src="_imgs/Reserveren/facebook.png" alt="Log in met facebook">
+                    <img src="_imgs/Reserveren/google.png" alt="Log in met google" id="google">
+
+                </figure>
+                <span id="gegevens">... of vul uw gegevens in.</span>
+                <form action="" method="post">
+                    <input type="text" name="naam" placeholder="naam" id="naam" onblur="validateName()">
+                    <span id="naamSpan"></span>
+                    <input type="email" name="mail" placeholder="emailadres" id="mail" onblur="validateMail()">
+                    <span id="mailSpan"></span>
+                    <input type="tel" name="tel" placeholder="telefoonnummer" id="tel" onblur="validateNumber()">
+                    <span id="telSpan"></span>
+                </form>
+            </div>
+            <div class="circle" id="circle2">
+                <span>2</span>
+            </div>
+            <section id="stoelen">
+                <span>Kies uw stoel(en)</span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td id="1" class="stoel"></td>
+                            <td id="2" class="stoel"></td>
+                            <td id="3" class="stoel"></td>
+                            <td id="4" class="stoel"></td>
+                            <td id="5" class="stoel"></td>
+                            <td id="6" class="stoel"></td>
+                            <td id="7" class="stoel"></td>
+                            <td id="8" class="stoel"></td>
+                            <td id="9" class="stoel"></td>
+                            <td id="10" class="stoel"></td>
+                            <td id="11" class="stoel"></td>
+                        </tr>
+                        <tr>
+                            <td id="12" class="stoel"></td>
+                            <td id="13" class="stoel"></td>
+                            <td id="14" class="stoel"></td>
+                            <td id="15" class="stoel"></td>
+                            <td id="16" class="stoel"></td>
+                            <td id="17" class="wit"></td>
+                            <td id="18" class="stoel"></td>
+                            <td id="19" class="stoel"></td>
+                            <td id="20" class="stoel"></td>
+                            <td id="21" class="stoel"></td>
+                            <td id="22" class="stoel"></td>
+                        </tr>
+                        <tr>
+                            <td id="23" class="stoel"></td>
+                            <td id="24" class="stoel"></td>
+                            <td id="25" class="stoel"></td>
+                            <td id="26" class="stoel"></td>
+                            <td id="27" class="stoel"></td>
+                            <td id="28" class="wit"></td>
+                            <td id="29" class="stoel"></td>
+                            <td id="30" class="stoel"></td>
+                            <td id="31" class="stoel"></td>
+                            <td id="32" class="stoel"></td>
+                            <td id="33" class="stoel"></td>
+                        </tr>
+                        <tr>
+                            <td id="34" class="stoel"></td>
+                            <td id="35" class="stoel"></td>
+                            <td id="36" class="stoel"></td>
+                            <td id="37" class="stoel"></td>
+                            <td id="38" class="stoel"></td>
+                            <td id="39" class="wit"></td>
+                            <td id="40" class="stoel"></td>
+                            <td id="41" class="stoel"></td>
+                            <td id="42" class="stoel"></td>
+                            <td id="43" class="stoel"></td>
+                            <td id="44" class="stoel"></td>
+                        </tr>
+                        <tr>
+                            <td id="45" class="stoel"></td>
+                            <td id="46" class="stoel"></td>
+                            <td id="47" class="stoel"></td>
+                            <td id="48" class="stoel"></td>
+                            <td id="49" class="stoel"></td>
+                            <td id="50" class="wit"></td>
+                            <td id="51" class="stoel"></td>
+                            <td id="52" class="stoel"></td>
+                            <td id="53" class="stoel"></td>
+                            <td id="54" class="stoel"></td>
+                            <td id="55" class="stoel"></td>
+                        </tr>
+                        <tr>
+                            <td id="56" class="stoel"></td>
+                            <td id="57" class="stoel"></td>
+                            <td id="58" class="stoel"></td>
+                            <td id="59" class="stoel"></td>
+                            <td id="60" class="stoel"></td>
+                            <td id="61" class="wit"></td>
+                            <td id="62" class="stoel"></td>
+                            <td id="63" class="stoel"></td>
+                            <td id="64" class="stoel"></td>
+                            <td id="65" class="stoel"></td>
+                            <td id="66" class="stoel"></td>
+                        </tr>
+                        <tr>
+                            <td id="67" class="stoel"></td>
+                            <td id="68" class="stoel"></td>
+                            <td id="69" class="stoel"></td>
+                            <td id="70" class="stoel"></td>
+                            <td id="71" class="stoel"></td>
+                            <td id="72" class="wit"></td>
+                            <td id="73" class="stoel"></td>
+                            <td id="74" class="stoel"></td>
+                            <td id="75" class="stoel"></td>
+                            <td id="76" class="stoel"></td>
+                            <td id="77" class="stoel"></td>
+                        </tr>
+                        <tr>
+                            <td id="78" class="stoel"></td>
+                            <td id="79" class="stoel"></td>
+                            <td id="80" class="stoel"></td>
+                            <td id="81" class="stoel"></td>
+                            <td id="82" class="stoel"></td>
+                            <td id="83" class="wit"></td>
+                            <td id="84" class="stoel"></td>
+                            <td id="85" class="stoel"></td>
+                            <td id="86" class="stoel"></td>
+                            <td id="87" class="stoel"></td>
+                            <td id="88" class="stoel"></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <div class="podium">
+                    <h3>podium</h3>
+                    <div class="rechthoek"></div>
+                    <div class="cirkel"></div>
+                </div>
+
+
+
+
+            </section>
+            <div class="circle" id="circle3">
+                <span>3</span>
+            </div>
+            <section id="bevestiging">
+                <span id="bevestigingSpan">Bevestiging</span>
+                <p id="col1">Reservering-id
+                    <br/> Voorstelling
+                    <br/> Aantal tickets
+                    <br/> Groep
+                    <br/> Datum
+                    <br/> Tijd
+                    <br/> Plaats
+                    <br/>
+                </p>
+                <p id="col2">
+                    <span id="bestellingSpan">2716</span>
+                    <br/> Biest
+                    <br/> <span id="aantalTickets">2</span> stuks
+                    <br/> De rode snavels
+                    <br/> Dinsdag 24 feb.
+                    <br/> 20:30
+                    <br/> Theater Imperium
+                    <br/>
+                </p>
+                <p id="col3">
+                    <span id="naamBevestiging">Naam</span>
+                    <br/>
+                    <span id="mailBevestiging">Mail</span>
+                    <br/>
+                    <span id="telBevestiging">Telefoonnummer</span>
+                </p>
+            </section>
+            <div class="circle" id="circle4">
+                <span>4</span>
+            </div>
+            <section id="betalen">
+                <span>Betalen</span>
+                <section id="betaalbuttons">
+                    <div id="ideal"></div>
+                    <div id="paypal"></div>
+                    <div id="bitcoin"></div>
+                    <div id="later">
+
+                    </div>
+                    <p>
+                        Ik betaal liever tijdens
+                        <br/> mijn theaterbezoek.
+                    </p>
+                </section>
+                <form>
+                    <div id="ideal">
+                        <input type="radio" name="betaling" value="ideal" class="betaalmiddel">
+                    </div>
+                    <div id="paypal">
+                        <input type="radio" name="betaling" value="paypal" class="betaalmiddel">
+                    </div>
+                    <div id="bitcoin">
+                        <input type="radio" name="betaling" value="bitcoin" class="betaalmiddel">
+                    </div>
+                    <div id="later">
+                        <input type="radio" name="betaling" value="later" class="betaalmiddel">
+                    </div>
+                </form>
+                <span id="betaalSpan"></span>
+            </section>
+            <a href="javascript:;" id="volgendeButton" onclick="checkBetaling()">volgende</a>
+        </section>
+    </main>
+    <footer>
+        <section id="contact" class=".col-2">
+            <h4>Theater Imperium</h4>
+            <p>Oude Vest 33e
+                <br/> 2312 XR Leiden
+                <br/>071 5141035</p>
+        </section>
+        <section id="volgOns">
+            <h4>Volg ons</h4>
+            <div class="wrapper">
+                <a href="https://www.facebook.com/ToneelgroepImperium/">
+                    <figure id="facebook" class="socialRed2"><img src="_imgs/socialMedia/facebookRed.png" alt="onze facebook-pagina"></figure>
+                </a>
+                <a href="https://twitter.com/imperiumtheater">
+                    <figure id="twitter" class="socialRed2"><img src="_imgs/socialMedia/twitterRed.png" alt="onze twitter-pagina"></figure>
+                </a>
+            </div>
+        </section>
+        <section id="nieuwsbrief">
+            <p>Schrijf je in voor de <b>nieuwsbrief</b> en blijf op de hoogte van het laatste nieuws!</p>
+            <form action="index.html" method="post" class="subscribe-form">
+                <input type="email" name="email" class="subscribe-input" placeholder="email adres">
+                <button type="submit" class="subscribe-submit"></button>
+                <img src="_imgs/icons/arrow.png" alt="">
+            </form>
+        </section>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+.page1 {}
+
+* {
+    box-sizing: border-box;
+}
+
+#mainSlider {
+    position: relative;
+    height: 590px;
+    margin-left: 8.33%;
+    margin-top: 40px;
+    z-index: -1;
+}
+
+.mainSlider1,
+.mainSlider2,
+.mainSlider3 {
+    transition: all .5s ease-in-out;
+}
+
+#mainSlider > figure > img {
+    height: 100%;
+    width: auto;
+}
+
+#mainSlider > figure {
+    height: 100%;
+    width: auto;
+}
+
+#mainSlider > figure:nth-child(2) {
+    position: absolute;
+    margin-top: -606px;
+}
+
+#mainSlider > figure:nth-child(3) {
+    position: absolute;
+    margin-top: -606px;
+}
+
+#mainObject {
+    animation: slideTop 750ms cubic-bezier(0, 0.61, 1, 1);
+    width: 41.66%;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #cd1946;
+    margin-top: -560px;
+    float: right;
+    margin-right: 8.33%;
+}
+
+.mainText {
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+    top: 80px;
+    animation: fadeIn 500ms;
+}
+
+.mainText > h1 {
+    margin: 0;
+    font-family: 'Raleway Bold', sans-serif;
+    font-size: 3.5em;
+    color: white;
+}
+
+.mainText > h2 {
+    margin: 0;
+    font-family: 'Raleway Light', sans-serif;
+    font-size: 1.5em;
+    color: #c4c4c4;
+}
+
+.mainText > p {
+    margin: 0;
+    margin-top: 20px;
+    font-family: 'Raleway Regular', sans-serif;
+    font-size: 1.1em;
+    line-height: 25px;
+    color: white;
+    text-align: justify;
+}
+
+#mainObject > a {
+    display: block;
+    position: relative;
+    top: 140px;
+    margin: 0 auto;
+    padding: 10px 35px 10px 35px;
+    width: 150px;
+    text-decoration: none;
+    font-family: 'Roboto light', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    animation: fadeIn 2000ms;
+}
+
+#mainObject > a:hover {
+    border-color: #cd1946;
+    color: #cd1946;
+    background-color: white;
+    font-weight: 800;
+}
+
+.page2 {
+    position: relative;
+    margin-top: 90px;
+    width: 100%;
+    height: 760px;
+    background-color: #f4f4f4;
+}
+
+.page2 > h3 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    color: #cd1946;
+    text-align: center;
+    top: 60px;
+}
+
+.page2 > .figureWrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 1028px;
+    margin-top: 120px;
+}
+
+.page2 > .figureWrapper > div {
+    position: relative;
+    margin: 0;
+    width: 300px;
+    height: 450px;
+    background-color: darkgrey;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 20px 0 20px;
+}
+
+.page2 > .figureWrapper > a > div {
+    position: relative;
+    margin: 0;
+    width: 300px;
+    height: 450px;
+    background-color: darkgrey;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 20px 0 20px;
+}
+
+.page2 > .figureWrapper > div#productie3 {
+    background-image: url(../_imgs/figuresPage2/vrede.png);
+    background-size: cover;
+}
+
+.page2 > .figureWrapper > div#productie2 {
+    background-image: url(../_imgs/figuresPage2/zouthuis.png);
+    background-size: cover;
+}
+
+.page2 > .figureWrapper > a > div#productie1 {
+    background-image: url(../_imgs/figuresPage2/zucht.png);
+    background-size: cover;
+}
+
+.page2 > .figureWrapper > a {
+    text-decoration: none;
+}
+
+.page2 > .figureWrapper > div:hover {
+    background-color: #cd1946;
+    background-blend-mode: lighten;
+    transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.page2 > .figureWrapper > a > div:hover {
+    background-color: #cd1946;
+    background-blend-mode: lighten;
+    transform: scale(1.1);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.page2 > .figureWrapper > div:hover > h3 {
+    margin-left: -110px;
+    margin-top: 10px;
+    top: 20px;
+}
+
+.page2 > .figureWrapper > a > div:hover > h3 {
+    margin-left: -110px;
+    margin-top: 10px;
+    top: 20px;
+}
+
+.page2 > .figureWrapper > div#productie2:hover > h3 {
+    margin-left: 0px;
+    margin-top: 20px;
+    top: 20px;
+    font-size: 2.35em;
+}
+
+.page2 > .figureWrapper > div:hover > p {
+    opacity: 1;
+}
+
+.page2 > .figureWrapper > a > div:hover > p {
+    opacity: 1;
+}
+
+.page2 > .figureWrapper > div > h3 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    top: 160px;
+    font-weight: 700;
+    transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.page2 > .figureWrapper > a > div > h3 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    top: 160px;
+    font-weight: 700;
+    transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.page2 > .figureWrapper > div > p {
+    position: relative;
+    font-family: 'Roboto light', sans-serif;
+    color: white;
+    font-size: 1em;
+    text-align: justify;
+    margin: 0px 40px 0 40px;
+    opacity: 0;
+}
+
+.page2 > .figureWrapper > a > div > p {
+    position: relative;
+    font-family: 'Roboto light', sans-serif;
+    color: white;
+    font-size: 1em;
+    text-align: justify;
+    margin: 0px 40px 0 40px;
+    opacity: 0;
+}
+
+

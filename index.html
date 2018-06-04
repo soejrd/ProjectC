@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Imperium Theater</title>
+    <link rel="stylesheet" href="_styling/mainStyle.css">
+    <link rel="stylesheet" href="_styling/index.css">
+    <script src="_js/main.js"></script>
+    <link rel="icon" href="_imgs/logoImperium.jpg">
+
+</head>
+
+<body onload="runSlider(3000)">
+    <header>
+        <nav>
+            <figure id="logo" onclick="clickableLogo()"><img src="_imgs/logoImperium.jpg" alt="Logo toneelgroep Imperium" title="Home"></figure>
+            <ul id="navUl">
+                <li id="navLi">
+                    <a href="agenda.html" id="nav1">agenda</a>
+                </li>
+
+                <li id="navLi">
+                    <a href="fotoboek.html" id="nav3">fotoboek</a>
+                </li>
+                <li id="navLi">
+                    <a href="over.html" id="nav4">over</a>
+                </li>
+                <li id="navLi">
+                    <a href="contact.html" id="nav5">contact</a>
+                </li>
+                <a href="https://www.facebook.com/ToneelgroepImperium/" id="socialRed">
+                    <img src="_imgs/socialMedia/facebookRed.png" alt="onze facebook-pagina">
+                </a>
+                <a href="https://twitter.com/imperiumtheater" id="socialRed">
+                    <img src="_imgs/socialMedia/twitterRed.png" alt="onze twitter-pagina">
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page1">
+            <section id="mainSlider">
+                <figure class="mainSlider1"><img src="_imgs/slider/Biest1-Persfoto-034-1024x682.jpg" alt="Biest persfoto" class="mainSlider1"></figure>
+                <figure class="mainSlider2"><img src="_imgs/slider/Biest2-Persfoto-088-1024x682.jpg" alt="Biest persfoto" class="mainSlider2"></figure>
+                <figure class="mainSlider3"><img src="_imgs/slider/Biest3-Persfoto-175-1024x682.jpg" alt="Biest persfoto" class="mainSlider3"></figure>
+
+
+
+            </section>
+            <section id="mainObject">
+                <div class="mainText">
+                    <h1>Biest</h1>
+                    <h2>van Tilde van Haaster</h2>
+                    <p>Een oude boerin en haar dochter houden samen een boerderij draaiende, zij kunnen elkaar echter niet meer bereiken. Moeder weet dat haar einde nadert, en besluit dan haar laastste levensgeheimen op te biechten. De boerderij blijkt zo goed als failliet en de dochter moet de eindjes aan elkaar zien te knopen...</p>
+                </div>
+                <a href="reserveren.html">tickets</a>
+            </section>
+        </div>
+        <div class="page2">
+            <h3>In productie</h3>
+            <div class="figureWrapper">
+                <a href="biest.html">
+                    <div id="productie1" onlick="zucht()">
+                        <h3>Zucht</h3>
+                        <p>Mama’s aan de Poort speelt ‘Zucht’. Deze mama’s voelen de noodzaak om regelmatig even te zuchten. Om zo zuurstof op te nemen voor het zingen van hun mooie liedjes. Tijdens hun avondvullende muziek theater programma zucht, zingt, zaagt, praat, droomt, denkt iedereen mee en komt er uiteindelijk lucht. Want het hoeft niet altijd veel en groots te zijn, geluk is soms het mooiste in het klein.</p>
+                    </div>
+                </a>
+                <div id="productie2" onclick="zouthuis()">
+                    <h3>Het Zouthuis</h3>
+                    <p>“Ik dacht dat ik in een gesprek zat maar ik weet het niet eens zeker”. Het Zouthuis is zoet, zuur en bitter. Het is hard, grappig, pijnlijk, ontroerend en wrang. Een huis vol geheime luikjes, verdwenen kasten, verliefde beertjes, één dood kind en een heleboel verroeste intimiteit.</p>
+                </div>
+                <div id="productie3" onclick="vrede()">
+                    <h3>
+                        Vrede
+                    </h3>
+                    <p>
+                        Vrede is een schrijnend hilarische voorstelling over de absurde uren na een overlijden. We zien een dode in zijn huiskamer op bed liggen. Zijn levensvriend, Awram, heeft hem gewassen en gekleed en hem klaar gemaakt voor zijn laatste reis. Zijn zus, Vera, is samen met haar man, Broes, gekomen om zijn begrafenis te regelen. Zijn ex, Ster, komt aanwaaien voor een laatste afscheid.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section id="contact" class=".col-2">
+            <h4>Theater Imperium</h4>
+            <p>Oude Vest 33e
+                <br/> 2312 XR Leiden
+                <br/>071 5141035</p>
+        </section>
+        <section id="volgOns">
+            <h4>Volg ons</h4>
+            <div class="wrapper">
+                <a href="https://www.facebook.com/ToneelgroepImperium/">
+                    <figure id="facebook" class="socialRed2"><img src="_imgs/socialMedia/facebookRed.png" alt="onze facebook-pagina"></figure>
+                </a>
+                <a href="https://twitter.com/imperiumtheater">
+                    <figure id="twitter" class="socialRed2"><img src="_imgs/socialMedia/twitterRed.png" alt="onze twitter-pagina"></figure>
+                </a>
+            </div>
+        </section>
+        <section id="nieuwsbrief">
+            <p>Schrijf je in voor de <b>nieuwsbrief</b> en blijf op de hoogte van het laatste nieuws!</p>
+            <form action="index.html" method="post" class="subscribe-form">
+                <input type="email" name="email" class="subscribe-input" placeholder="email adres">
+                <button type="submit" class="subscribe-submit"></button>
+                <img src="_imgs/icons/arrow.png" alt="">
+            </form>
+
+        </section>
+
+
+    </footer>
+
+
+
+</body>
+
+
+
+
+</html>
